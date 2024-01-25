@@ -1,10 +1,10 @@
 <%
-if(session.getAttribute("name")==null){
-	response.sendRedirect("login.jsp");
-}
+
+	if(session.getAttribute("name")==null){
+		response.sendRedirect("login.jsp");
+	}
 
 %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,7 @@ if(session.getAttribute("name")==null){
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>Freelancer - Start Bootstrap Theme</title>
+<title>Portal</title>
 <!-- Favicon-->
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 <!-- Font Awesome icons (free version)-->
@@ -21,7 +21,7 @@ if(session.getAttribute("name")==null){
 	crossorigin="anonymous"></script>
 <!-- Google fonts-->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-	rel="stylesheet" type="text/css" />
+	rel="stylRXresheet" type="text/css" />
 <link
 	href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
 	rel="stylesheet" type="text/css" />
@@ -29,12 +29,13 @@ if(session.getAttribute("name")==null){
 <link href="css/index-styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
+
 	<!-- Navigation-->
 	<nav
 		class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
 		id="mainNav">
 		<div class="container">
-			<a class="navbar-brand" href="#page-top">Mak Developer</a>
+			<a class="navbar-brand" href="#page-top">Unique Developer</a>
 			<button
 				class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
 				type="button" data-bs-toggle="collapse"
@@ -47,11 +48,14 @@ if(session.getAttribute("name")==null){
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="">Logout</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="Logout">Logout</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="Logout"><%= session.getAttribute("name") %></a></li>	
+						
 					
 				</ul>
 			</div>
@@ -64,7 +68,7 @@ if(session.getAttribute("name")==null){
 			<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg"
 				alt="..." />
 			<!-- Masthead Heading-->
-			<h1 class="masthead-heading text-uppercase mb-0">Bem-vindo a pagina CoffeWithCode</h1>
+			<h1 class="masthead-heading text-uppercase mb-0">Welcome To Unique Developer</h1>
 			<!-- Icon Divider-->
 			<div class="divider-custom divider-light">
 				<div class="divider-custom-line"></div>
@@ -229,7 +233,8 @@ if(session.getAttribute("name")==null){
 		<div class="container">
 			<!-- Contact Section Heading-->
 			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">Entra em contato</h2>
+				class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact
+				Me</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -306,7 +311,7 @@ if(session.getAttribute("name")==null){
 						</div>
 						<!-- Submit Button-->
 						<button class="btn btn-primary btn-xl disabled" id="submitButton"
-							type="submit">Enviar</button>
+							type="submit">Send</button>
 					</form>
 				</div>
 			</div>
